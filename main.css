@@ -381,3 +381,19 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+.flexContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 450px){
+  .nav { order: 1; width: 100%; }
+  .hero { order: 2; width: 50%}
+  .top-news { order: 3; width: 50%; }
+  .scores { order: 4; }
+  .weather { order: 5; }
+  .recent-news { order: 6; }
+  footer { order: 7; }
+}
